@@ -120,7 +120,7 @@ class Params
 	"OPTRE Insurrectionists - Requirements :: @CBA_A3;@OPTRE",
 	"IFA3 Desert US Army - Requirements :: @CUP_Terrains_Core;@CUP_Terrains_Maps;@IFA3_AIO_LITE"
 	};
-	default = 3;
+	default = 1;
 	};
 	class INS_Dum_Param4//12
 	{
@@ -148,21 +148,21 @@ class Params
 	title = "		Enemy AI Spawn Trigger Distance";
 	values[]={200,250,300,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,1250};
 	texts[]={"200","250","300","350","400","450","500","550","600","650","700","750","800","850","900","950","1000","1050","1100","1150","1200","1250"};
-	default = 350;
+	default = 500;
 	};
 	class Max_Act_Gzones//16
 	{
 	title = "		Maximum Simultaneous Activated Zone Limit";
 	values[]={10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,150,300,1000};
 	texts[]={"10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100","150","300","1000"};
-	default = 35;
+	default = 50;
 	};
 	class DeAct_Gzone_delay//17
 	{
 	title = "		Grid zone deactivation delay";
 	values[]={0,0.5,1,2,3,4,5,6,8,10,12,14,16,18,20,30};
 	texts[]={"Disabled","30 seconds","1 minute","2 minutes","3 minutes","4 minutes","5 minutes","6 minutes","8 minutes","10 minutes","12 minutes","14 minutes","16 minutes","18 minutes","20 minutes","30 minutes"};
-	default = 1;
+	default = 5;
 	};
 	class EnableEnemyAir//18
 	{
@@ -218,7 +218,7 @@ class Params
 	title = "		Ambient Mobile Civilians?";
 	values[]={0,1,2,3,4};
 	texts[]={"No","1 Per Player","2 Per Player","3 Per Player","4 Per Player"};
-	default = 1;
+	default = 4;
 	};
 	class CivProbability//26
 	{
@@ -246,7 +246,7 @@ class Params
 	title = "		Playable Opfor";
 	values[]={0,5,7,9,11,99};
 	texts[]={"Enabled with no Limits","Enabled if 5 or more blufor players present","Enabled if 7 or more blufor players present","Enabled if 9 or more blufor players present","Enabled if 11 or more blufor players present","Disabled"};
-	default = 5;
+	default = 99;
 	};
 	class INS_logistics//30
 	{
@@ -271,7 +271,7 @@ class Params
 	title = "		Damage Multiplier (Effective hit on enemy A.I.)";
 	values[]={50,100,200,300};
 	texts[]={"Low","Default","High","Very High"};
-	default = 200;
+	default = 100;
 	};
 	class INSpDamMul//33
 	{
@@ -329,7 +329,7 @@ class Params
 	title = "		Enable Save/Restore full loadout on respawn?";
 	values[]={0,1};
 	texts[]={"No, respawn with inventory you had at death (Reload Magazine to Save Kit)","Yes"};
-	default = 0;
+	default = 1;
 	};
 	class INS_VA_type//41
 	{
