@@ -1,7 +1,7 @@
-Author = "Jigsor =BMR=";
+Author = "Jigsor =BMR=, ryd3v";
 loadScreen = "images\bmrflag.paa";
 onLoadName = "BMR Insurgency Altis";
-onLoadMission = "bmr-squad.com";
+onLoadMission = "ryd3v.com";
 onLoadMissionTime = false;
 overviewText = "Find and destroy all ammo caches";
 overviewPicture = "images\bmrflag.paa";
@@ -200,7 +200,7 @@ class RscTitles {
     {
         idd = -1;
         movingEnable = 0;
-        duration = 10;
+        duration = 5;
         fadein = 2;
         fadeout = 2;
         name = "bmr_intro";

@@ -65,11 +65,11 @@ if (DebugEnabled > 0) then {
 		0=[] execVM "scripts\minedetector.sqf";
 	};
 
-	// Fatigue and Stamina
-	setStaminaScheme "FastDrain";
-	if (Fatigue_ability isEqualTo 0) then {//Disable Fatigue/Stamina
-		[player] call INS_full_stamina;
-	};
+	// // Fatigue and Stamina
+	// setStaminaScheme "FastDrain";
+	// if (Fatigue_ability isEqualTo 0) then {//Disable Fatigue/Stamina
+	// 	[player] call INS_full_stamina;
+	// };
 
 	// Group Manager
 	["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;

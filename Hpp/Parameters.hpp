@@ -27,7 +27,7 @@ class Params
 	"Static Weather 100% Overcast (Weather Disabled)",
 	"Dynamic Real Weather Enabled (time accelerated x 2.6)",
 	"Dynamic Random Weather Enabled"};
-	default = 0;
+	default = 2;
 	};
 	class ambRadioChatter//3
 	{

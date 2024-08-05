@@ -3,30 +3,30 @@
 // Server Functions //
 call compile preprocessFileLineNumbers "INSfncs\server\server_fncs.sqf";
 
-// Weather //
-if ((JIPweather isEqualTo 0) || {(JIPweather >3)}) then {
-	0 = 0 spawn {
-		//Date is advanced + 48 hours of editor settings
-		waitUntil {time > 1};
-		skipTime (((INS_p_time - (daytime) +24) % 24) -24);
-		86400 setOvercast (JIPweather/100);
-		UIsleep 1;
-		0 setFog 0;
-		skipTime 24;
-		sleep 1;
-		simulWeatherSync;
-		if (JIPweather isEqualTo 0) then {sleep 15; overCastValue = [0] call BIS_fnc_paramWeather; 0 setFog 0;};
-	};
-}else{
-	if (JIPweather isEqualTo 2) then {
-		[] execVM "scripts\real_weather.sqf"; skipTime ((INS_p_time - (daytime) +24) % 24);
-	}else{
-		if (JIPweather !=1) then {
-			[] execVM "scripts\randomWeather2.sqf"; skipTime (INS_p_time -0.84);
-		};
-		if (JIPweather isEqualTo 1) then {skipTime ((INS_p_time - (daytime) +24) % 24);};
-	};
-};
+// // Weather //
+// if ((JIPweather isEqualTo 0) || {(JIPweather >3)}) then {
+// 	0 = 0 spawn {
+// 		//Date is advanced + 48 hours of editor settings
+// 		waitUntil {time > 1};
+// 		skipTime (((INS_p_time - (daytime) +24) % 24) -24);
+// 		86400 setOvercast (JIPweather/100);
+// 		UIsleep 1;
+// 		0 setFog 0;
+// 		skipTime 24;
+// 		sleep 1;
+// 		simulWeatherSync;
+// 		if (JIPweather isEqualTo 0) then {sleep 15; overCastValue = [0] call BIS_fnc_paramWeather; 0 setFog 0;};
+// 	};
+// }else{
+// 	if (JIPweather isEqualTo 2) then {
+// 		[] execVM "scripts\real_weather.sqf"; skipTime ((INS_p_time - (daytime) +24) % 24);
+// 	}else{
+// 		if (JIPweather !=1) then {
+// 			[] execVM "scripts\randomWeather2.sqf"; skipTime (INS_p_time -0.84);
+// 		};
+// 		if (JIPweather isEqualTo 1) then {skipTime ((INS_p_time - (daytime) +24) % 24);};
+// 	};
+// };
 
 // Group Manager //
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
